@@ -1,0 +1,9 @@
+﻿@model List<PhamHaiMinh_241230797.Models.TheLoai>
+<ul class="menu">
+    <li> <a href="@Url.Action("Index", "TheLoai")">Pham Hai Minh</a> </li>
+    @foreach(var item in Model)
+    {
+        <li><a href="javascript:void(0);" class="load-sach" data-maTl="@item.MaTl">@item.TenTl</a></li>
+    }
+</ul>
+ 
